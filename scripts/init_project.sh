@@ -10,7 +10,7 @@ PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 
 
 mkdir -p \
-    "$PROJECT_ROOT/src/railway_rl_lab"/{ingestion,processing,gis,rl,gnn,visualization,utils} \
+    "$PROJECT_ROOT/src"/{ingestion,processing,gis,rl,gnn,visualization,utils} \
     "$PROJECT_ROOT/tests" \
     "$PROJECT_ROOT/data"/{raw,processed,exports} \
     "$PROJECT_ROOT/notebooks" \
@@ -21,7 +21,7 @@ mkdir -p \
 
 touch \
     "$PROJECT_ROOT/README.md" \
-    "$PROJECT_ROOT/src/railway_rl_lab/__init__.py" \
+    "$PROJECT_ROOT/src/__init__.py" \
     "$PROJECT_ROOT/docs/architecture.md" \
     "$PROJECT_ROOT/docs/design_decisions.md" \
     "$PROJECT_ROOT/docker/Dockerfile" \
