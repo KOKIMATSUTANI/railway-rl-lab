@@ -1,0 +1,47 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+
+
+
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual Environment
+.venv/
+
+# Environment Variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Data
+data/raw/
+data/processed/
+data/exports/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build artifacts
+build/
+dist/
+wheels/
+*.egg-info
+
+# Claude local settings
+.claude/settings.local.json
+.claude/auth.json
+
+# Future development
+*.so
+Thumbs.db
+.mypy_cache/
+.ruff_cache/
+
+# archive
+archive/
