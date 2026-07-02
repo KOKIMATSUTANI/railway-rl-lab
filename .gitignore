@@ -46,3 +46,7 @@ Thumbs.db
 
 # archive
 .archive/
+
+# logs
+logs/
+*.log
