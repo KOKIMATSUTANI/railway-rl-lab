@@ -53,7 +53,7 @@ Key idea:
 
 ```
 src/
-├── ingestion/        # Data acquisition (Overpass, GTFS)
+├── gtfs/             # Data acquisition (GTFS-rt)
 ├── overpass/         # Raw Overpass API experiments
 ├── processing/       # Parsing, graph building, feature engineering
 ├── gis/              # GeoJSON / PostGIS integration
@@ -71,6 +71,18 @@ data/
 ```
 
 ---
+
+## Data
+### 1. OpenRailwaymap 
+### 2. GTFS
+### 3. GTFS-rt
+
+## Future Work
+
+### priority 2
+- Optimize Docker image size by separating research and runtime dependencies.
+- Reduce container startup time for cloud deployment.
+- Improve dependency management for production environments. 
 
 ## ⚙️ Setup
 
