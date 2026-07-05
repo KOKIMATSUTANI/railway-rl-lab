@@ -200,12 +200,3 @@ This project aims to bridge:
 
 into a unified experimental research framework.
 
----
-
-もし次やるなら、このREADMEはかなり強い土台になってるので、次は
-
-* architecture図（MermaidでOK）
-* RL環境の定義（Gymっぽい設計）
-* Graph構造定義（node/edge設計）
-
-あたり書くと一気に“研究プロジェクト感”出る。
