@@ -1,15 +1,24 @@
 import graph.build_pyg as build_pyg
-import gnn.graph_encoder as graph_encoder
+from gnn.graph_state_encoder import RailwayGNN
+from rl.agent import RailwayAgent
+
 
 def main():
 
     data = build_pyg.data
 
-    encoder = graph_encoder.RailwayGNN()
+    encoder = RailwayGNN()
 
     embedding = encoder(data)
 
     print(embedding)
+
+    agent = RailwayAgent()
+
+    action = agent.select_action(data)
+
+    print(action)
+
 
 
 if __name__ == "__main__":
