@@ -200,3 +200,12 @@ This project aims to bridge:
 
 into a unified experimental research framework.
 
+
+## Roadmap
+
+- [x] Graph construction
+- [x] Graph encoder
+- [x] Q-network
+- [ ] Railway environment
+- [ ] Replay buffer
+- [ ] DDQN training
