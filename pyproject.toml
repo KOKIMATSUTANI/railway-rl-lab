@@ -28,3 +28,8 @@ dependencies = [
     "torch>=2.12.1",
     "torch-geometric>=2.8.0",
 ]
+
+[dependency-groups]
+dev = [
+    "pydeps>=3.0.6",
+]

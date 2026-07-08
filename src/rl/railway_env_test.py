@@ -14,17 +14,16 @@ class RailwayEnv:
 
     def step(self, action):
 
-        """
-        Actionに応じてgraph.xを書き換える
-        """
+        reward = self.calculate_reward()
 
-        # TODO:
-        # delay更新
-        # occupancy更新
-        # route更新
+        done = True
 
-        reward = ...
+        return (
+            self.graph,
+            reward,
+            done
+        )
 
-        done = ...
+    def calculate_reward(self):
 
-        return self.graph, reward, done
+        return 1

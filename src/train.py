@@ -1,11 +1,14 @@
 import graph.build_pyg as build_pyg
 from gnn.graph_state_encoder import RailwayGNN
 from rl.agent import RailwayAgent
+from rl.railway_env_test import RailwayEnv
 
 
 def main():
 
     data = build_pyg.data
+
+    env = RailwayEnv()
 
     encoder = RailwayGNN()
 
