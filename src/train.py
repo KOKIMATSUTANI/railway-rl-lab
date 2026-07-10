@@ -1,7 +1,7 @@
 import graph.build_pyg as build_pyg
 from gnn.graph_state_encoder import RailwayGNN
 from rl.agent import RailwayAgent
-from rl.railway_env_test import RailwayEnv
+from rl.railway_env import RailwayEnv
 
 
 def main():
