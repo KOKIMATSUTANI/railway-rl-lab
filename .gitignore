@@ -22,7 +22,8 @@ __pycache__/
 # Data
 data/raw/
 data/processed/
-data/exports/
+data/*
+
 
 # Jupyter
 .ipynb_checkpoints/
