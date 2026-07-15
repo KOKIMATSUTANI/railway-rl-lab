@@ -47,10 +47,7 @@ This project instead focuses on:
 
 ## infrastructure
 ### 1. 
-uv sync（依存関係が正しく解決できるか）
-ruff check .（コード品質）
-ruff format --check .（フォーマット）
-pytest（既存機能が壊れていないか）
+
 
 # Documentation
 
