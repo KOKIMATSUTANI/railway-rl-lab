@@ -46,15 +46,36 @@ This project instead focuses on:
 # Repository Structure
 
 ## infrastructure
-### 1. 
+
 
 
 # Documentation
 
 # Current Status
-- [x] OSM 
-- [ ] GTFS
-- [ ] GTFS realtime Data
+
+## 1. Infrastructure Modeling
+- [x] Railway infrastructure (OSM)
+- [x] Station metadata
+- [ ] Signal & switch modeling
+
+## 2. Operational Data
+- [x] GTFS Static
+- [x] GTFS Realtime
+
+## 3. Graph Construction
+- [x] Data preprocessing
+- [ ] Graph generation
+- [ ] Feature engineering
+
+## 4. AI Models
+- [ ] GNN
+- [ ] RL
+- [ ] GNN + RL integration
+
+## 5. Deployment
+- [x] Docker (for GTFS realtime ingestion with )
+- [ ] AWS
+- [ ] Continuous data collection
 
 # References
 

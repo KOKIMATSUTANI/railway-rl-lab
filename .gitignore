@@ -38,6 +38,7 @@ wheels/
 # Claude local settings
 .claude/settings.local.json
 .claude/auth.json
+.claudemd
 
 # Future development
 *.so
@@ -47,6 +48,7 @@ Thumbs.db
 
 # archive
 .archive/
+.legacy/
 
 # logs
 logs/
