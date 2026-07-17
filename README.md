@@ -44,6 +44,45 @@ This project instead focuses on:
 
 
 # Repository Structure
+```text
+
+├── README.md
+├── data
+│   ├── processed
+│   ├── raw
+│   └── test
+├── docker
+│   ├── Dockerfile
+│   ├── Dockerfile.gtfs_rt_ingest
+│   └── docker-compose.yml 
+├── docs
+│   ├── graph.md
+│   ├── gtfs_rt.md
+│   ├── osm.md
+│   └── rl.md
+├── infrastructure
+│   ├── aws
+│   └── github_actions
+├── logs
+│   └── ingest_gtfs_rt.log
+├── pyproject.toml
+├── scripts
+│   ├── init_project.sh
+│   └── run_gtfs_rt_ingestion.sh
+├── src
+│   ├── __init__.py
+│   ├── archive
+│   ├── gnn
+│   ├── graph
+│   ├── gtfs
+│   ├── gtfs_rt
+│   ├── osm
+│   ├── rl
+│   ├── train.py
+│   ├── utils
+│   └── visualization
+└── uv.lock
+```
 
 ## infrastructure
 
