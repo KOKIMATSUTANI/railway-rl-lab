@@ -39,6 +39,7 @@ wheels/
 .claude/settings.local.json
 .claude/auth.json
 .claudemd
+.claude/
 
 # Future development
 *.so
