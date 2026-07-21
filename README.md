@@ -7,9 +7,10 @@ An Open-Source AI Framework for Railway Traffic Management
 - [Motivation](#motivation)
 - [Repository Structure](#repository-structure)
 - [Current Status](#current-status)  
-Last Update on 14.Jul.2026
-- [Documentation](#documentation)
-- [Future Direction](#Future-Direction)
+Last Update on 18.Jul.2026
+- [Future Direction](#future-direction)
+- [Reference](#references)
+- [Data Sources](#data-sources)
 
 # Project Overview
 - Collect railway infrastructure data (e.g., tracks, switches, signals, and platforms) from OpenStreetMap (OSM).
@@ -30,100 +31,73 @@ This project aims to investigate how modern AI techniques can support railway tr
 - ☁️ **AWS Cloud Services** for scalable and practical deployment.
 - ⚛️ **Quantum Computing** as a future direction for solving complex railway optimization problems.
 
-## Why Open Source?
-
-Many railway optimization studies rely on proprietary operational data that cannot be reproduced.
-
-This project instead focuses on:
-
-- Building a fully reproducible research framework.
-- Using only publicly available datasets.
-- Bridging academic research and real-world railway operations.
-- Developing technologies that could eventually be deployed in practical railway systems.
-
-
 
 # Repository Structure
 ```text
 
 ├── README.md
 ├── data
-│   ├── processed
 │   ├── raw
-│   └── test
+│   └── processed
 ├── docker
-│   ├── Dockerfile
-│   ├── Dockerfile.gtfs_rt_ingest
-│   └── docker-compose.yml 
+│   └──  Dockerfile.gtfs_rt_ingest
 ├── docs
-│   ├── graph.md
-│   ├── gtfs_rt.md
 │   ├── osm.md
+│   ├── gtfs_rt.md
+│   ├── graph.md
 │   └── rl.md
-├── infrastructure
-│   ├── aws
-│   └── github_actions
-├── logs
-│   └── ingest_gtfs_rt.log
-├── pyproject.toml
-├── scripts
-│   ├── init_project.sh
-│   └── run_gtfs_rt_ingestion.sh
 ├── src
 │   ├── __init__.py
-│   ├── archive
-│   ├── gnn
-│   ├── graph
-│   ├── gtfs
-│   ├── gtfs_rt
 │   ├── osm
+│   ├── gtfs_rt
+│   ├── graph
+│   ├── gnn
 │   ├── rl
 │   ├── train.py
-│   ├── utils
 │   └── visualization
+├── pyproject.toml
 └── uv.lock
 ```
 
-## infrastructure
-
-
-
-# Documentation
-
 # Current Status
-
 ## 1. Infrastructure Modeling
-- [x] Railway infrastructure (OSM)
-- [x] Station metadata
-- [ ] Signal & switch modeling
+- [x] Overpass query development for the Dresden railway network
+- [x] GeoJSON-based railway data validation
+- [x] Automated OpenStreetMap data acquisition via Overpass API
+- [x] Railway infrastructure preprocessing
+- [x] Station metadata extraction
+- [x] Signal and switch extraction
 
 ## 2. Operational Data
-- [x] GTFS Static
-- [x] GTFS Realtime
+
+### 2.1 GTFS Static
+- [x] GTFS Static ingestion
+
+### 2.2 GTFS Realtime
+- [x] GTFS Realtime ingestion  
+- [x] Docker containerization 
+- [x] AWS Fargate deployment
+- [x] Automated GTFS-Realtime data collection with AWS (Fargate&EventBridge) 
+- [ ] Data preprocessing for generating Graph 
+
 
 ## 3. Graph Construction
-- [x] Data preprocessing
-- [ ] Graph generation
-- [ ] Feature engineering
+- [x] Prototype graph generation (dummy data)
+- [ ] Graph generation with real railway data (PyTorch Geometric)
 
 ## 4. AI Models
-- [ ] GNN
-- [ ] RL
+- [x] Prototype reinforcement learning environment
+- [ ] GNN implementation
+- [ ] RL environment with real railway network
+- [ ] Reward function design
 - [ ] GNN + RL integration
+- [ ] Training & evaluation
 
-## 5. Deployment
-- [x] Docker (for GTFS realtime ingestion with )
-- [ ] AWS
-- [ ] Continuous data collection
-
-# References
-
-# License
-
-# Future Direction 
+## Future Direction 
 The ultimate goal is to build an open-source platform for intelligent railway traffic management that can contribute to reducing delays in real-world railway operations while remaining extensible to future technologies.
 
 ## ideas
+- 
 - NeTEx 
 - Deutsche Bahn API (German Railway API)
 
@@ -131,3 +105,12 @@ The ultimate goal is to build an open-source platform for intelligent railway tr
 - Quantum Computing / Quantum Machine Leaning (QML)
 - Mix Integer Linier Programming (MILP) 
 - Long Short-Term Memory (LSTM)
+
+# References
+## References
+
+- Fouladi, A., Okhrin, O., & Bešinović, N. (2026). *Real-time microscopic train rescheduling using graph neural network based reinforcement learning*. SSRN Preprint. https://doi.org/10.2139/ssrn.6604465
+
+# License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) file for details.
+
