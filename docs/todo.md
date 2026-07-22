@@ -10,3 +10,12 @@
 
 ## ✅ Read
 - 
+
+# Experiential Learning Cycle
+
+| Step | Guiding Question |
+|------|-------------------|
+| **1. Concrete Experience** | **What did I try?** |
+| **2. Reflective Observation** | **What happened?** |
+| **3. Abstract Conceptualization** | **What did I learn?** |
+| **4. Active Experimentation** | **What will I try next?** |
