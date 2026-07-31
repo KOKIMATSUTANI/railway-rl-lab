@@ -1,4 +1,18 @@
+## 31.07.2026 
+### SUMO
+WSL（開発・可視化）
+  SUMO stable + sumo-gui / netedit
+  Python + uv + PyTorch Geometric
+  TraCIで状態・行動・報酬をデバッグ
+
+Docker（再現・学習）
+  同じSUMO version
+  同じuv.lock / Python依存
+  headless sumo + 学習スクリプト
+  → EC2 / AWS Batchへそのまま移植
+
 ## 23.07.2026
+### シナリオ
 1. 遅延シナリオをどう定義しているか、確認しアイディアを整理
 2. switch malfunctionのみ対象、継続時間を定義していることが分かった
 3. 遅延の原因が入っているgtfs-rtの内容を絞り込んでシナリオ生成してみる？

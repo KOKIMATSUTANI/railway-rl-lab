@@ -41,9 +41,9 @@ wheels/
 .claudemd
 .claude/
 
-# idea in Japanese
-docs/japanese/*
-docs/japanese/
+# # idea in Japanese
+# docs/japanese/*
+# docs/japanese/
 
 
 # Future development
